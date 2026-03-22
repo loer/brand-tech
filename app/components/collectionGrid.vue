@@ -1,14 +1,4 @@
 <template>
-    <!-- <pre>spots{{ spots }}</pre>
-    <div class="collection-grid">
-        <div
-            v-for="(product, index) in products"
-            :key="product.id"
-            class="grid-item"
-        >
-            {{ index + 1 }}
-        </div>
-    </div> -->
     <div class="collection-grid">
         <div
             v-for="item in allItems"
@@ -38,6 +28,7 @@ const props = defineProps<{
 const getClass = (itemType: string, data: Product | Spot) => {
     return itemType === 'product' ? 'grid-item' : `grid-item-spot-${data.type}`
 }
+
 const allItems: Array<{
     id: number | string,
     type: 'product' | 'spot',
@@ -74,7 +65,6 @@ allItems.sort((a, b) => a.position - b.position)
 <style lang="scss" scoped>
 .collection-grid {
     display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
@@ -84,38 +74,18 @@ allItems.sort((a, b) => a.position - b.position)
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 150px;
-
-    // &:nth-child(3) {
-    //     // grid-column: span 2;
-    //     // grid-row: span 2;
-    //     background-color: var(--primary);
-    // }
-
-    // &:nth-child(11) {
-    //     grid-column: span 2;
-    //     // grid-row: span 2;
-    //     background-color: var(--alert);
-    // }
-
-    // &:nth-child(16) {
-    //     grid-column: span 2;
-    //     grid-row: span 2;
-    //     background-color: var(--accent);
-    //     height: 100%;
-    // }    
+    min-height: 150px;  
 }
 
 .grid-item-spot-1x1 {
-    background-color: olive;
 }
+
 .grid-item-spot-2x1 {
     grid-column: span 2;
-    background-color: aqua;
 }
+
 .grid-item-spot-2x2 {
     grid-column: span 2;
     grid-row: span 2;
-    background-color: tomato;
 }
 </style>

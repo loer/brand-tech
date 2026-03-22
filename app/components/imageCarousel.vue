@@ -44,11 +44,9 @@ const current = ref(0)
 }
 .carousel-list {
     display: flex;
-    /* justify-content: flex-start; */
     gap: 10px;
 }
 .carousel-thumbnail {
-    /* flex: 0 0 auto; */
     width: 100%;
     max-width: 75px;
     height: auto;

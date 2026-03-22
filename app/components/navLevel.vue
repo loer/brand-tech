@@ -22,10 +22,4 @@ const props = defineProps<{
 }>()
 
 const { data: topLevelCategories } = await useFetch('/api/categories', { query: { level: props.level } })
-// const categories = getCategories()
-
 </script>
-
-<style>
-
-</style>

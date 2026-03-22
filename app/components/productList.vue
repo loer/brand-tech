@@ -1,5 +1,4 @@
 <template>
-    <!-- Maybe some filtering options here? -->
     <div class="productList">
         <product-card
             v-for="product in products"

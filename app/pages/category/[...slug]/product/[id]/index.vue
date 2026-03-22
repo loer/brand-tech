@@ -3,7 +3,6 @@
         <nav-tree :root-category-id="rootCategoryId ?? ''" />
         <product-details :product="product" />
     </div>
-
 </template>
 
 <script setup lang="ts">

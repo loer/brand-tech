@@ -15,7 +15,6 @@ import CategoryChildren from '~/components/categoryChildren.vue';
 const props = defineProps<{
     rootCategoryId: string | string[]
 }>()
-console.log('ROOT', props.rootCategoryId)
 const { data } = await useFetch('/api/category', { query: { categoryId: props.rootCategoryId } })
 const category = data as unknown as Category
 const route = useRoute()

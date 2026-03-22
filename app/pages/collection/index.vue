@@ -7,7 +7,6 @@
   </div>
 </template>
 
-
 <script setup lang="ts">
 import type { Product } from '~/interfaces/product';
 import type { Spot } from '~/interfaces/spot';

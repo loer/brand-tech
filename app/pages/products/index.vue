@@ -8,8 +8,3 @@ import productList from '../../components/productList.vue'
 import type { Product } from '~/interfaces/product';
 const { data } = await useFetch<Product[]>('/api/products')
 </script>
-
-
-<style>
-
-</style>
