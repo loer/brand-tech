@@ -74,7 +74,6 @@ allItems.sort((a, b) => a.position - b.position)
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 150px;  
 }
 
 .grid-item-spot-1x1 {

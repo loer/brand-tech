@@ -14,6 +14,8 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .item-card {
+    background-color: var(--background);
+    border: 1px solid var(--grey);
     display: flex;
     flex-direction: column;
     width: 100%;

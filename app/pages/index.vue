@@ -15,6 +15,7 @@
                 <li>Better error handling and loading states</li>
                 <li>Filters for category pages (brand/sizes etc.)</li>
                 <li>Accessibility improvements</li>
+                <li>Language support</li>
                 <li>Styling/UX
                     <ul>
                         <li>Make the collection grid responsive and visually appealing</li>
